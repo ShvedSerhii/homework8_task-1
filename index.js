@@ -1,5 +1,5 @@
 const { fromEvent } = rxjs
-const { debounceTime, map } = rxjs.operators
+const { map } = rxjs.operators
 
 const old = console.log
 const logger = document.getElementById('log')
