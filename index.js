@@ -15,7 +15,7 @@ let res = {
   input3: ''
 }
 
-function observableFactory(obj) {
+function observersFactory(obj) {
   for (const key in obj){
     const input = document.getElementById(key)
     fromEvent(input, 'input').pipe(
@@ -24,4 +24,4 @@ function observableFactory(obj) {
   }
 }
 
-observableFactory(res)
+observersFactory(res)
